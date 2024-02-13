@@ -2,10 +2,126 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="author" content="Tutorial">
+    <meta name="description" content="Descripción del sitio">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="keywords" content="tutorial, palabra, clave">
+    <title>Estrucutra de la cabezera</title>
+    <link rel="icon" href="">
+
 </head>
 <body>
-    
+
+    <center>
+        <h3>
+            Formulario
+        </h3>
+        <form action="">
+            <label for="entrada1">Entrada 1</label>
+            <input id="entrada1" type="text" placeholder="Entrada de texto" value="">
+            <input type="text" placeholder="Entrada de texto" value="Hola" readonly>
+
+            <br>
+            <br>
+            
+            <label for="entradaCorreo">Entrada de correo</label>
+            <input id="entradaCorreo" type="email" placeholder="Entrada de texto" value="">
+            
+            <br>
+            <br>
+
+            <label for="entradaContra">Entrada de contraseña</label>
+            <input id="entradaContra" type="password" placeholder="Entrada de texto" value="">
+            
+            <br>
+            <br>
+
+            <label for="entradaNum">Entrada de numero</label>
+            <input id="entradaNum" type="number" value="1" min="0" max="5">
+            
+            <br>
+            <br>
+
+            <label for="entradaSelect">Entrada de select</label>
+            <select name="select" id="">
+                <option value="1">Opción 1</option>
+                <option value="2">Opción 2</option>
+                <option value="3">Opción 3</option>
+            </select>
+
+            <br>
+            <br>
+
+            <input type="submit" value="Enviar Formulario">
+
+        </form>
+    </center>
+
+    <hr>
+
+    <header><div id="logotipo">Logotipo</div></header>
+    <nav>Barra navegación</nav>
+    <section>Sección principal</section>
+    <aside>
+        <div class="noticias">Notícia 1</div>
+        <div class="noticias">Notícia 2</div>
+        <div class="noticias">Notícia 3</div>
+    </aside>
+    <article>Artículo</article>
+    <h1>Título</h1>
+    <h3>Título</h3>
+    <p>Esto es un párrafo <br> esto es otra línea</p>
+    <hr>
+    <a href="#">Link</a>
+    <figure>
+        <img src="img/IMG_4562.JPG" alt="Puesta de sol">
+    </figure>
+    <ol>
+        <li>Item 1</li>
+        <li>Item 2</li>
+    </ol>
+    <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+    </ul>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>MES</th>
+                <th>AHORRO</th>
+            </tr>
+        </thead>
+        <tr>
+            <th>Enero</th>
+            <th>100€</th>
+        </tr>
+        <tr>
+            <td>Febrero</td>
+            <td>200€</td>
+        </tr>
+    </table>
+
+    <h1>Resultados del Examen</h1>
+    <p>Carlos: <meter value="94" min="0" max="100" high="90"></meter></p>
+    <p>Ana: <meter value="84" min="0" max="100" high="90"></meter></p>
+    <footer>Este es el pie de página</footer>
+
+    <h2>Resultados del Ventas</h2>
+    <p>Enero: <progress value="94" min="0" max="100" ></progress></p>
+
+    <audio  autoplay controls loop preload="auto">
+        <!-- No se recomienda formato .wav: muy pesado -->
+        <!-- Se recomienda incluir el mismo audio en los formatos .m4a, .mp3 y .ogg -->
+        <source src="audio/No dishe ni hmm.wav" type="audio/wav">
+    </audio>
+
+    <video autoplay controls loop width="500" height="280">
+        <!-- Extensiones: .ogv, .mp4 y .webm -->
+        <!-- Se recomienda incluir el mismo vídeo con todos los formatos -->
+        <source src="video/Mi video.mp4" type="video/mp4">
+    </video>
+
+    <iframe src="https://www.youtube.com/embed/MCsKtfgSfQo" width="500" height="280" frameborder="0" allowfullscreen></iframe>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11974.386108337676!2d2.1401374716906876!3d41.382849940759876!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a4a27fdee7e2fb%3A0x2600fae14082f072!2sLa%20Nova%20Esquerra%20de%20l&#39;Eixample%2C%20Eixample%2C%20Barcelona!5e0!3m2!1ses!2ses!4v1707828448526!5m2!1ses!2ses" width="600" height="450" style="border:0;" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 </body>
 </html>
