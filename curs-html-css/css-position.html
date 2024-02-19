@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Protest+Revolution&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            font-family: sans-serif;
+        }
+
+        header {
+            width: 1000px;
+            height: 120px;
+            /* background: #444; */
+            position: relative;
+            margin: 20px auto;
+        }
+
+        #logo {
+            font-family: "Protest Revolution", sans-serif;
+            font-size: 50px;
+            text-align: center;
+
+            position: absolute;
+            top: 30px;
+            left: 30px;
+            width: 200px;
+            height: 60px;
+            /* background: #ccc; */
+        }
+
+        .redes {
+            position: absolute;
+            width: 42px;
+            height: 42px;
+            border-radius: 100%;
+            background: #ccc;
+            text-align: center;
+            line-height: 42px;
+            color: white;
+        }
+
+        #icono1 {
+            top: 42px;
+            right: 123px;
+            background-color: rgb(61, 144, 240);
+        }
+
+        #icono2 {
+            top: 42px;
+            right: 71px;
+            background-color: rgb(224, 81, 81);
+        }
+
+        #icono3 {
+            top: 42px;
+            right: 19px;
+            background-color: black;
+        }
+
+        nav {
+            width: 1000px;
+            height: 48px;
+            /* background: #aaa; */
+            position: relative;
+            margin: 20px auto;
+            /* Solo dos valores en margin -> margen vertical y horizontal */
+        }
+
+        .botones {
+            float: left;
+            width: 196px;
+            height: 48px;
+            background: #1683ff;
+            margin: 0px 2px;
+            font-family: "Protest Revolution";
+            color: white;
+            text-align: center;
+            line-height: 48px;
+        }
+
+        #top {
+            width: 1000px;
+            height: 192px;
+            position: relative;
+            margin: 20px auto;
+            /* Solo dos valores en margin -> margen vertical y horizontal */
+        }
+
+        #top ul {
+            width: 1010px;
+        }
+
+        #top ul li {
+            float: left;
+            width: 326px;
+            height: 192px;
+            /* background: black; */
+            margin-right: 10px;
+            text-align: center;
+        }
+
+        #top ul li img {
+            border-radius: 100%;
+            height: 100px;
+        }
+
+        #top ul li h1 {
+            font-family: "Protest Revolution";
+        }
+
+        #top ul li p {
+            font-size: 14px;
+            margin: 16px;
+        }
+
+        section {
+            width: 1000px;
+            height: 500px;
+            /* background: #aaa; */
+            position: relative;
+            margin: 20px auto;
+            /* Solo dos valores en margin -> margen vertical y horizontal */
+        }
+
+        aside#izq {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 200px;
+            height: 500px;
+            /* background: #333; */
+        }
+
+        aside#izq ul li {
+            background-color: #aaa;
+            padding: 10px;
+            margin: 2px;
+            list-style: square;
+            list-style-position: inside;
+            /* list-style-image: url(img/IMG_4562.JPG);  <- Sirve para cambiar el punto/cuadrado de una ul por una imagen*/
+        }
+
+        aside#der {
+            position: absolute;
+            right: 0;
+            top: 0;
+            width: 200px;
+            height: 500px;
+            /* background: #333; */
+        }
+
+        aside#der h1 {
+            width: 200px;
+            height: 50px;
+            line-height: 50px;
+            text-align: center;
+            background: #1683ff;
+            color: white;
+            margin-bottom: 5px;
+        }
+
+        aside#der input {
+            padding: 10px;
+            margin: 5px 0;
+            width: 176px;
+        }
+
+        article {
+            position: absolute;
+            left: 200px;
+            top: 0;
+            width: 600px;
+            height: 500px;
+            /* background: #aaa; */
+        }
+
+        article h1 {
+            font-family: "Protest Revolution";
+            font-size: 40px;
+            margin: 20px;
+        }
+
+        article p {
+            margin: 20px;
+            font-size: 15px;
+        }
+
+        article p img {
+            float: left;
+            margin-right: 20px;
+        }
+
+        footer {
+            width: 1000px;
+            height: 70px;
+            background: #1683ff;
+            position: relative;
+            margin: 20px auto;
+            /* Solo dos valores en margin -> margen vertical y horizontal */
+            text-align: center;
+            line-height: 70px;
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <header>
+        <div id="logo">Logotipo</div>
+
+        <div id="icono1" class="redes">X</div>
+        <div id="icono2" class="redes">X</div>
+        <div id="icono3" class="redes">X</div>
+
+    </header>
+
+    <nav>
+        <ul>
+            <li class="botones">Botón 1</li>
+            <li class="botones">Botón 2</li>
+            <li class="botones">Botón 3</li>
+            <li class="botones">Botón 4</li>
+            <li class="botones">Botón 5</li>
+        </ul>
+    </nav>
+
+    <div id="top">
+        <ul>
+            <li>
+                <img src="img/IMG_4562.JPG" width="100" alt="">
+                <h1>Lorem Ipsum</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </li>
+            <li>
+                <img src="img/IMG_4562.JPG" width="100" alt="">
+                <h1>Lorem Ipsum</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </li>
+            <li>
+                <img src="img/IMG_4562.JPG" width="100" alt="">
+                <h1>Lorem Ipsum</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </li>
+        </ul>
+    </div>
+
+    <section>
+        <aside id="izq">
+            <ul>
+                <li>Link 1</li>
+                <li>Link 2</li>
+                <li>Link 3</li>
+                <li>Link 4</li>
+            </ul>
+        </aside>
+        <article>
+            <h1>Lorem Ipsum</h1>
+            <p><img src="img/IMG_4562.JPG" width="250" alt="">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Ut quis odio turpis. Pellentesque ligula massa, semper et dignissim pretium, rhoncus ut ex.
+                Integer eros nulla, luctus eu tortor nec, mattis maximus est. Nam ac tincidunt lectus, at luctus lacus.
+                Nullam facilisis ligula tristique nisl tristique, a vehicula ex pulvinar. Fusce quis pharetra augue.
+                Maecenas dolor sapien, mattis quis semper a, porta ac nunc. Nunc consequat tortor quis nulla fermentum
+                fringilla. Nulla luctus augue id felis molestie iaculis. Mauris quis leo vitae sem maximus tempus sed
+                sed velit. Cras vulputate enim eu porta molestie. Proin lobortis sollicitudin eros, quis fringilla
+                lorem sagittis vel. Nulla eleifend eget orci in luctus.</p>
+
+            <br>
+
+            <p> Nam at malesuada arcu. In sit amet iaculis ex. Integer
+                dapibus enim sit amet placerat dictum. Phasellus ante velit, gravida eget lorem non, efficitur
+                feugiat eros. Etiam nec lorem hendrerit velit rhoncus egestas. Vivamus lacinia nisi quis ligula
+                aliquam laoreet. Integer ut laoreet justo. Curabitur rutrum, purus eget auctor sollicitudin,
+                leo justo fermentum libero, sit amet sodales arcu ipsum eu augue. Quisque pellentesque lectus ante,
+                vitae mattis erat venenatis ac.</p>
+
+        </article>
+        <aside id="der">
+            <h1>Ingreso</h1>
+            <form action="">
+                <input type="text" placeholder="Usuario">
+                <input type="password" name="" id="" placeholder="Contraseña">
+                <input type="email" name="" id="" placeholder="Email">
+            </form>
+        </aside>
+    </section>
+
+    <footer>
+        &copy; Todos los derechos reservados
+    </footer>
+</body>
+
+</html>
