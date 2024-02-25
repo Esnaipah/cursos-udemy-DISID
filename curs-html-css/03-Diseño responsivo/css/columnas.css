@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: sans-serif;
+    /* esto se usa paraque el relleno y 
+    el BORDE estén incluidos en el width de cada caja */
+    box-sizing: border-box;
+}
+
+.contenedor {
+    position: relative;
+    margin: auto;
+    width: 100%;
+    height: auto;
+
+}
+
+.fila {
+    position: relative;
+    margin: auto;
+    width: 100%;
+    height: auto;
+    clear: both;
+    /* Esto sirve para que cuando una fila quede incompleta,
+     la siguiente se coloque debajo */
+    display: table;
+    /* Esto sirve para que no "queden huecos" en la fila
+    se puede comprobar con el color de fondo */
+}
+
+/* WARNING!!!! -> El border añade 1px de width extra, 
+por lo que se puede descuadrar todo.
+Para evitar esto se usa la propiedad box-sizing definida en el *{...}
+*/
+
+/* Este selector aplica a todas las clases que empiezen por "col-" */
+[class*="col-"] {
+    float: left;
+    border: 1px solid black;
+    padding: 20px;
+}
+
+.col-12 {
+    width: 100%;
+}
+
+.col-11 {
+    width: 91.66666666%;
+}
+
+.col-10 {
+    width: 83.33333333%;
+}
+
+.col-9 {
+    width: 75%;
+}
+
+.col-8 {
+    width: 66.66666666%;
+}
+
+.col-7 {
+    width: 58.33333333%;
+}
+
+.col-6 {
+    width: 50%;
+}
+
+.col-5 {
+    width: 41.66666666%;
+}
+
+.col-4 {
+    width: 33.33333333%;
+}
+
+.col-3 {
+    width: 25%;
+}
+
+.col-2 {
+    width: 16.66666666%;
+}
+
+.col-1 {
+    width: 8.333333333%;
+}
