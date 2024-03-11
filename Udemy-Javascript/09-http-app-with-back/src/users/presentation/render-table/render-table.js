@@ -63,8 +63,9 @@ export const renderTable = (element) => {
 
     if (!table) {
         table = createTable();
+        element.innerHTML = '';
         element.append(table);
-        //TODO: listeners of table
+        // element.innerHTML = table;
         table.addEventListener('click', tableSelectListener);
         table.addEventListener('click', tableDeleteListener);
     }
