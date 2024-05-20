@@ -3,7 +3,8 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { AlonePageComponent } from './alone/pages/alone-page/alone-page.component';
+import { ProductsModule } from './products/products.module';
+import { SharedModule } from './shared/shared.module';
 
 @NgModule({
   declarations: [
@@ -12,6 +13,7 @@ import { AlonePageComponent } from './alone/pages/alone-page/alone-page.componen
   imports: [
     BrowserModule,
     AppRoutingModule,
+    ProductsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
